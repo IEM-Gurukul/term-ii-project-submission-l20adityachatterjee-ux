@@ -27,25 +27,37 @@ public class Library {
         return null;
     }
 
-    public void issueBook(int bookId) {
-        Book b = findBook(bookId);
-        if (b == null) {
-            System.out.println("Book not found!");
-        } else if (b.isIssued()) {
-            System.out.println("Already issued!");
-        } else {
-            b.issueBook();
-            System.out.println("Book issued successfully!");
-        }
+   public void issueBook(int bookId) {
+    Book b = findBook(bookId);
+
+    if (b == null) {
+        System.out.println(" Invalid Book ID!");
+        return;
     }
 
-    public void returnBook(int bookId) {
-        Book b = findBook(bookId);
-        if (b == null) {
-            System.out.println("Book not found!");
-        } else {
-            b.returnBook();
-            System.out.println("Book returned!");
-        }
+    if (b.isIssued()) {
+        System.out.println(" Book is already issued!");
+        return;
     }
+
+    b.issueBook();
+    System.out.println("Book issued successfully!");
+}
+
+   public void returnBook(int bookId) {
+    Book b = findBook(bookId);
+
+    if (b == null) {
+        System.out.println("Invalid Book ID!");
+        return;
+    }
+
+    if (!b.isIssued()) {
+        System.out.println(" Book was not issued!");
+        return;
+    }
+
+    b.returnBook();
+    System.out.println(" Book returned successfully!");
+}
 }
