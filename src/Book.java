@@ -20,7 +20,9 @@ public class Book {
     public void returnBook() { isIssued = false; }
 
     public void display() {
-        System.out.println(id + " | " + title + " | " + author + " | " +
-                (isIssued ? "Issued" : "Available"));
-    }
+    System.out.println("Book ID: " + id);
+    System.out.println("Title: " + title);
+    System.out.println("Author: " + author);
+    System.out.println("Status: " + (isIssued ? "Issued" : "Available"));
 }
+    }
