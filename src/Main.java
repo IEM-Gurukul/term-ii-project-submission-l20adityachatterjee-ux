@@ -6,7 +6,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n1.Add Book\n2.Register Member\n3.Show Books\n4.Issue Book\n5.Return Book\n6.Exit");
+            System.out.println("\n===== LIBRARY MANAGEMENT SYSTEM =====");
+            System.out.println("1. Add Book");
+            System.out.println("2. Register Member");
+            System.out.println("3. Show Books");
+            System.out.println("4. Issue Book");
+            System.out.println("5. Return Book");
+            System.out.println("6. Exit");
+            System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
 
             switch (choice) {
