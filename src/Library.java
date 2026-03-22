@@ -1,5 +1,5 @@
 import java.util.*;
-
+// This class manages books and members
 public class Library {
     private List<Book> books = new ArrayList<>();
     private List<Member> members = new ArrayList<>();

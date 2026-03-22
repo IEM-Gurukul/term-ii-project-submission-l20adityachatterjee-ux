@@ -1,4 +1,4 @@
-public class Book {
+public class Book {// Method to issue the book
     private int id;
     private String title;
     private String author;
