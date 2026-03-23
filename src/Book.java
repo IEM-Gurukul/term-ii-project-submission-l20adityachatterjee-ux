@@ -20,9 +20,11 @@ public class Book {// Method to issue the book
     public void returnBook() { isIssued = false; }
 
     public void display() {
-    System.out.println("Book ID: " + id);
+    System.out.println("----------------------------");
+    System.out.println("ID: " + id);
     System.out.println("Title: " + title);
     System.out.println("Author: " + author);
     System.out.println("Status: " + (isIssued ? "Issued" : "Available"));
+    System.out.println("----------------------------");
 }
     }
