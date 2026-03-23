@@ -11,6 +11,6 @@ public class Member {
     public String getName() { return name; }
 
     public void display() {
-        System.out.println(memberId + " | " + name);
-    }
+    System.out.println("Member ID: " + memberId + " | Name: " + name);
+}
 }
