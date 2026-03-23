@@ -60,4 +60,13 @@ public class Library {
     b.returnBook();
     System.out.println(" Book returned successfully!");
 }
+public void searchBook(String title) {
+    for (Book b : books) {
+        if (b.getTitle().equalsIgnoreCase(title)) {
+            b.display();
+            return;
+        }
+    }
+    System.out.println("Book not found!");
+}
 }

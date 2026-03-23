@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Library lib = new Library();
         Scanner sc = new Scanner(System.in);
-
+        // Main menu-driven program
         while (true) {
             System.out.println("\n===== LIBRARY MANAGEMENT SYSTEM =====");
             System.out.println("1. Add Book");
@@ -13,6 +13,7 @@ public class Main {
             System.out.println("4. Issue Book");
             System.out.println("5. Return Book");
             System.out.println("6. Exit");
+            System.out.println("7. Search Book");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
 
@@ -53,6 +54,13 @@ public class Main {
 
                 case 6:
                     System.exit(0);
+                    break;
+                case 7:
+                    sc.nextLine();
+                    System.out.print("Enter title: ");
+                    String t = sc.nextLine();
+                    lib.searchBook(t);
+                    break;
             }
         }
     }
