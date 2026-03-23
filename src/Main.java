@@ -15,7 +15,14 @@ public class Main {
             System.out.println("6. Exit");
             System.out.println("7. Search Book");
             System.out.print("Enter your choice: ");
-            int choice = sc.nextInt();
+            int choice;
+            try {
+                choice = sc.nextInt();
+            } catch (Exception e) {
+            System.out.println("Invalid input! Try again.");
+            sc.nextLine();
+            continue;
+            }
 
             switch (choice) {
                 case 1:
