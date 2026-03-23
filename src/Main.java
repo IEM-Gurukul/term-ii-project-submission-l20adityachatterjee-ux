@@ -53,8 +53,9 @@ public class Main {
                     break;
 
                 case 6:
-                    System.exit(0);
-                    break;
+                   sc.close();
+                   System.out.println("Exiting program...");
+                   return;
                 case 7:
                     sc.nextLine();
                     System.out.print("Enter title: ");
