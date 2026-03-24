@@ -5,7 +5,14 @@ public class Library {
     private List<Member> members = new ArrayList<>();
 
     public void addBook(Book book) {
-        books.add(book);
+        for (Book b : books) {
+    if (b.getId() == book.getId()) {
+        System.out.println("Book with this ID already exists!");
+        return;
+    }
+}
+books.add(book);
+System.out.println("Book added successfully!");
     }
 
     public void registerMember(Member member) {
