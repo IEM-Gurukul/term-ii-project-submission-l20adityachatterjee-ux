@@ -69,4 +69,15 @@ public void searchBook(String title) {
     }
     System.out.println("Book not found!");
 }
+public void removeBook(int bookId) {
+    Book b = findBook(bookId);
+
+    if (b == null) {
+        System.out.println("Book not found!");
+        return;
+    }
+
+    books.remove(b);
+    System.out.println("Book removed successfully!");
+}
 }

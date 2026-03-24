@@ -15,6 +15,7 @@ public class Main {
             System.out.println("6. Exit");
             System.out.println("7. Search Book");
             System.out.println("8. Show Members");
+            System.out.println("9. Remove Book");
             System.out.print("Enter your choice: ");
             int choice;
             try {
@@ -72,6 +73,11 @@ public class Main {
                     break;
                 case 8:
                     lib.displayMembers();
+                    break;
+                case 9:
+                    sc.nextLine();  
+                    System.out.print("Enter Book ID to remove: ");
+                    lib.removeBook(sc.nextInt());
                     break;
             }
         }
