@@ -14,6 +14,7 @@ public class Main {
             System.out.println("5. Return Book");
             System.out.println("6. Exit");
             System.out.println("7. Search Book");
+            System.out.println("8. Show Members");
             System.out.print("Enter your choice: ");
             int choice;
             try {
@@ -68,6 +69,9 @@ public class Main {
                     System.out.print("Enter title: ");
                     String t = sc.nextLine();
                     lib.searchBook(t);
+                    break;
+                case 8:
+                    lib.displayMembers();
                     break;
             }
         }
